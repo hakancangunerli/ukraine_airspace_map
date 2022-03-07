@@ -37,12 +37,12 @@ def measurement():
     return lat_min, lat_max, lon_min, lon_max
 
 
-lat_min, lon_min, lon_max, lat_max = measurement()
+lat_min, lat_max, lon_min, lon_max = measurement()
 
 
 try:
-    response = api_call(lat_min, lon_min, lat_max, lon_max)
-
+    response = api_call(lat_min, lat_max, lon_min, lon_max)
+    print(response)
 
 #LOAD TO PANDAS DATAFRAME
     col_name = ['icao24', 'callsign', 'origin_country',
