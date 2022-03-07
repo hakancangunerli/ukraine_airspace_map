@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 from visualize import visualize
 from api_call import api_call
-st.set_page_config(layout="wide")
-
 #AREA EXTENT COORDINATE WGS4
 
 
